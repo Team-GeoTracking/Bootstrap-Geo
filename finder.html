@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="UTF-8" />
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	
+
+	<title>GeoTracking</title>
+
+	 <nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">GeoTracker</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="index.html"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Google Map</a></li>
+	        <li><a href="tracking.html"><span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span> Tracking</a></li>
+	        <li><a href="direction.html"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Get Directions</a></li>
+	        <li class="active"><a href="#"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Finder</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+
+</head>
+
+<body>
+
+	<div class="container">
+
+	    <div class="row">
+
+	        <div class="col-sm-1 col-md-12"></div>
+	    
+	    </div>
+	    
+	    <div class="row">
+	    
+	        <div class="col-sm-1 col-md-6">
+
+				<div class="panel panel-default">
+					
+					<div class="panel-heading">
+						<div class="panel-title">
+							<button class="btn btn-danger">Find Direction</button>
+							<button class="btn btn-danger">Find Me!</button>
+							<button class="btn btn-danger">Reset</button>
+						</div>
+					</div>
+					
+					<div class="panel-body">
+	        			<div id="googleMap" style="width: auto; height: 380px;"></div>
+	        		</div>
+	        	</div>
+
+	        </div>
+	    
+	        <div class="col-sm-1 col-md-6">
+
+	        	<div class="panel panel-default" style="width: auto; height: 380px;">
+	        		<div class="panel-heading">
+	        			<h4 style="color: #FFF">Map Information</h4>
+	        		</div>
+	        	</div>
+
+	        </div>
+	    
+	    </div>
+	    
+	    <div class="row">
+	    
+	        <div class="col-sm-1 col-md-11"></div>
+	    
+	    </div>
+	
+	</div>
+
+	</div>
+
+</body>
+
+<footer>
+
+	<nav class="navbar navbar-default navbar-fixed-bottom" id="footer">
+	</nav>
+
+</footer>
+
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!-- DELETE IF FINAL -->
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+</html>
