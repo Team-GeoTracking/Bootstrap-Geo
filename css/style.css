@@ -13,7 +13,7 @@
 
 /* BODY STYLE */
 
-body { padding: 70px 0px 40px 0px; }
+body { padding: 70px 0px 50px 0px; }
 
 /* NAVBAR DEFAULT COLOR */
 .navbar-default {
@@ -69,6 +69,48 @@ body { padding: 70px 0px 40px 0px; }
 
 .glyphicon-eye-open { color: green; }
 
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #000;
+/* NAVBAR TOGGLE COLOR */
+.navbar-default .navbar-toggle .icon-bar { background-color: #000; }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    color: #000;
+    background-color: #E7E7E7;
+}
+
+/* GOOGLE MAP GENERATOR */
+ #mapholder { width: auto; height: 400px; }
+
+ /* GET DIRECTIONS STYLE */
+
+
+#map-canvas {
+    width: auto;
+    height: 400px;
+}
+
+#target { width: 345px; }
+
+.map-box {
+  background: #FFF !important;
+  padding: 25px;
+  height:600px;
+}
+
+#target { width: 345px; }
+
+.trip_loopn {margin-top: 10px; margin-bottom:10px;}
+
+.title { margin-bottom:10px; }
+
+.title input,textarea { margin-top:10px; }
+
+.title h4 { margin-top:10px; }
+
+.custom_footer {
+    width:100%;
+    display:inline-block;
+    background:burlywood;
+    color:#fff;
+    text-align:center;
+    font-size:20px;
 }
